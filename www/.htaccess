@@ -1,0 +1,7 @@
+php_flag display_errors off
+AddDefaultCharset utf-8
+ErrorDocument 404 /templates/errors/404.html
+RewriteEngine on
+RewriteBase /
+ 
+RewriteRule ^([/\-a-zA-Z0-9_]+)/?$ index.php?quri=$1 [L]
